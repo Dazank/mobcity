@@ -1,0 +1,375 @@
+*, *::before, *::after{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "League Spartan", sans-serif;
+background-color: black;
+
+}
+
+.navbar{
+    display: flex;
+ justify-content:space-between;
+ padding-left: 3em;
+ padding-right: 3em;
+ position: sticky;
+ padding-top: 2em;
+
+ padding-bottom: 5em;
+ 
+}
+
+.nav_menu{
+    display: flex;
+    list-style: none;
+    gap:2em;
+    margin-right: 3em;
+    text-decoration: none;
+    font-size: x-large;
+    align-items: center;
+    padding-right: 3em;
+}
+
+.logo{
+    margin-right: 3em;
+    font-size: xxx-large;
+    align-items: center;
+    color:white;
+}
+
+.nav_link{
+text-decoration: none;
+
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hero_image{
+    background-image: url(./images/image4.jpeg);
+padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+
+min-width: 300px;
+
+}
+
+.hero_image2{
+    background-image: url(./images/image2.jpeg);
+padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+background-position: right;
+
+min-width: 300px;
+
+
+
+}
+
+.hero, .hero2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+
+.hero2{padding-top: 7em;}
+
+.hero_header{
+padding-bottom: 2rem;
+font-size: xxx-large;
+max-width: 40rem;
+color: white;
+text-align: left;
+margin: auto;
+
+}
+.hero_header2{
+  padding-bottom: 2rem;
+  font-size: xxx-large;
+  max-width: 40rem;
+  color: white;
+  text-align: left;
+  
+  
+  }
+
+.hero_text{
+    color:white;
+    font-size: x-large;
+    max-width: 30rem;
+    text-align: left;
+    
+}
+
+.hero_text2{
+    color:white;
+    font-size: x-large;
+    max-width: 30rem;
+    text-align: left;
+    padding-top: 2em;
+  
+    
+}
+
+.main{
+    width: 100%;
+padding-bottom: 30rem;
+
+    --s: 25vmin;
+    --p: calc(var(--s) / 2);
+    --c1: pink;
+    --c2: dodgerblue;
+    --c3: white;
+    --bg: var(--c3);
+    --d: 4000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+    
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+    animation: 
+      color var(--d) var(--e) infinite,
+      position var(--d) var(--e) infinite;
+  }
+  
+  @keyframes color {
+    0%, 25% {
+      --bg: var(--c3);
+    }
+    26%, 50% {
+      --bg: var(--c1);
+    }
+    51%, 75% {
+      --bg: var(--c3);
+    }
+    76%, 100% {
+      --bg: var(--c2);
+    }
+  }
+  
+  @keyframes position {
+    0% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  0), 
+        calc(var(--p) * -1) calc(var(--p) *  1), 
+        calc(var(--p) *  1) calc(var(--p) * -1), 
+        calc(var(--p) * -1) calc(var(--p) *  0);
+    }
+    25% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  4), 
+        calc(var(--p) * -1) calc(var(--p) *  5), 
+        calc(var(--p) *  1) calc(var(--p) *  3), 
+        calc(var(--p) * -1) calc(var(--p) *  4);
+    }
+    50% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 8), 
+        calc(var(--p) * -3) calc(var(--p) * 9), 
+        calc(var(--p) *  2) calc(var(--p) * 7), 
+        calc(var(--p) * -2) calc(var(--p) * 8);
+    }
+    75% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 12), 
+        calc(var(--p) * -3) calc(var(--p) * 13), 
+        calc(var(--p) *  2) calc(var(--p) * 11), 
+        calc(var(--p) * -2) calc(var(--p) * 12);
+    }
+    100% {    
+      background-position: 
+        calc(var(--p) *  5) calc(var(--p) * 16), 
+        calc(var(--p) * -5) calc(var(--p) * 17), 
+        calc(var(--p) *  5) calc(var(--p) * 15), 
+        calc(var(--p) * -5) calc(var(--p) * 16);
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    body {
+      animation: none;
+    }
+  }
+  
+
+
+
+
+
+ 
+
+
+
+  
+@media only screen and (max-width: 768px) {
+
+
+  *, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    background-color: black;
+    
+    }
+
+  body{
+   
+    width:100vw;
+    
+  }
+
+.navbar{
+  
+  justify-content: space-around;
+  gap:5rem;
+
+  
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width:auto;
+ ;
+}
+
+.hero2{
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+  
+  width:auto;
+ ;
+}
+
+
+
+.hero_image, .hero_image2{
+width:100%;
+background-size: cover;
+padding-bottom: 20rem;
+
+background-position: center;
+margin:0;
+
+
+}
+
+
+
+.hero_text, .hero_text2{
+  
+ font-size: medium;
+ max-width: 20rem;
+ padding-bottom: 5rem;
+ margin-bottom: 0;
+
+  
+}
+
+.hero_header{
+text-align:left;
+align-self:flex-start;
+
+font-size:xx-large;
+max-width: 20rem;
+padding-top: 2em;
+align-self:center;
+
+color:purple;
+
+
+}
+
+.hero_header2{
+  text-align:left;
+  align-self:flex-start;
+  margin: auto;
+  font-size:xx-large;
+  max-width: 20rem;
+  align-self:center;
+  padding-bottom: 0;
+  color:purple;
+  padding-top: 3em;
+  
+  
+  
+  }
+
+
+
+
+
+
+  .nav_menu {
+
+    align-items: center;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav_menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+}
