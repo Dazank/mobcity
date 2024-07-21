@@ -3,8 +3,10 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 font-family: "League Spartan", sans-serif;
-background-color: black;
+}
 
+body{
+  background-color: black;
 }
 
 .navbar{
@@ -83,7 +85,37 @@ min-width: 300px;
 
 }
 
-.hero, .hero2{
+.hero_image3{
+  background-image: url(./images/image3.jpeg);
+  padding-bottom: 30rem;
+  background-repeat:no-repeat ;
+  background-size: contain;
+  width: 40%;
+  margin-left: 3em;
+  
+  min-width: 300px;
+
+
+
+}
+
+.hero_image4{
+  background-image: url(./images/image1.jpeg);
+padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+background-position: right;
+
+min-width: 300px;
+
+
+
+}
+
+
+.hero, .hero2, .hero3, .hero4{
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 2em;
@@ -91,6 +123,9 @@ min-width: 300px;
 
 .hero2{padding-top: 7em;}
 
+.hero3{padding-top: 7em;}
+
+.hero4{padding-top: 7em;}
 .hero_header{
 padding-bottom: 2rem;
 font-size: xxx-large;
@@ -130,7 +165,8 @@ margin: auto;
 
 .main{
     width: 100%;
-padding-bottom: 30rem;
+
+align-content: center;
 
     --s: 25vmin;
     --p: calc(var(--s) / 2);
@@ -235,34 +271,34 @@ padding-bottom: 30rem;
     margin: 0;
     padding: 0;
     font-family: "League Spartan", sans-serif;
-    background-color: black;
+   
     
     }
 
   body{
    
     width:100vw;
-    
+    background-color: black;
   }
 
 .navbar{
   
   justify-content: space-around;
-  gap:5rem;
+  gap:4rem;
 
   
 }
 
-.hero{
+.hero, .hero3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+ 
   width:auto;
  ;
 }
 
-.hero2{
+.hero2, .hero4{
   display: flex;
   flex-direction:column-reverse;
   align-items: center;
@@ -273,10 +309,10 @@ padding-bottom: 30rem;
 
 
 
-.hero_image, .hero_image2{
+.hero_image, .hero_image2, .hero_image3, .hero_image4{
 width:100%;
 background-size: cover;
-padding-bottom: 20rem;
+
 
 background-position: center;
 margin:0;
@@ -290,10 +326,12 @@ margin:0;
   
  font-size: medium;
  max-width: 20rem;
- padding-bottom: 5rem;
- margin-bottom: 0;
-
   
+}
+
+.hero_text2{
+  padding-bottom: 3em;
+
 }
 
 .hero_header{
@@ -302,7 +340,7 @@ align-self:flex-start;
 
 font-size:xx-large;
 max-width: 20rem;
-padding-top: 2em;
+padding-top: 3em;
 align-self:center;
 
 color:purple;
@@ -313,13 +351,13 @@ color:purple;
 .hero_header2{
   text-align:left;
   align-self:flex-start;
-  margin: auto;
+ 
   font-size:xx-large;
   max-width: 20rem;
   align-self:center;
-  padding-bottom: 0;
-  color:purple;
   padding-top: 3em;
+  color:purple;
+ 
   
   
   
@@ -357,6 +395,9 @@ color:purple;
   .hamburger {
       display: block;
       cursor: pointer;
+      
+      
+     
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -371,5 +412,192 @@ color:purple;
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+  max-width:90%;
+  border-radius: 10px;
+  background: linear-gradient(rgb(249, 255, 255), rgb(219, 156, 255));
+  padding: 30px 20px;
 
+}
+  
+
+audio {
+  width: 50%;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+button {
+  margin: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+button img {
+  width: 50px;
+  margin-bottom: -5px;
+}
+
+.buttons,
+.playlist {
+  margin-left: 22px;
+  
+}
+
+#playlist{
+  list-style: none;
+  text-align: center;
+}
+
+
+li {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+h4 {
+  margin-top: 20px;
+}
+.music-link{
+  color:black;
+}
+
+.socials{
+  display:flex;
+  
+  list-style: none;
+  margin: auto;
+  max-width: 30rem;
+  
+  width: 100%;
+justify-content: center;
+
+}
+
+footer{
+  justify-items: center;
+  padding-bottom: 0
+ 
+}
+
+
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin: auto;
+  width: 580px;
+  border-radius: 10px;
+  background: linear-gradient(rgb(249, 255, 255), rgb(219, 156, 255));
+  padding: 30px 20px;
+
+}
+  
+
+audio {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+button {
+  margin: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+button img {
+  width: 50px;
+  margin-bottom: -5px;
+}
+
+.buttons,
+.playlist {
+  margin-left: 22px;
+  
+}
+
+#playlist{
+  list-style: none;
+  text-align: center;
+}
+
+
+li {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+h4 {
+  margin-top: 20px;
+}
+.music-link{
+  color:black;
+}
+
+.socials{
+  display:flex;
+  gap: 3em;
+  list-style: none;
+  margin: auto;
+  max-width: 30rem;
+}
+
+footer{
+  justify-items: center;
+  padding-top: 7em;
 }

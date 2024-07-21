@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MobCity</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+
+
+
+<link rel="stylesheet" href="./styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -38,6 +44,7 @@
     </h1>
     <p class="hero_text">Welcome to the world of MobCity – where passion for music meets creative excellence! Hailing from Nigeria, this dynamic duo has been on an electrifying musical journey since their school days in Minna, and their drive to produce and share captivating tunes has never been stronger.</p>
         </div>
+       
     
 </div>
     </header>
@@ -52,8 +59,60 @@
        
        
 <main class="main">
+ 
+    <div class="player-container">
+        <h1>Music</h1>
+        <audio id="audio" controls>
+            <source id="audioSource" src="" type="audio/mp3">
+        </audio>
+
+        <div class="buttons">
+            <button onclick="playPrevious()">
+                <img src="https://cdn-icons-png.flaticon.com/512/318/318477.png" alt="">
+            </button>
+            <button onclick="togglePlayPause()">
+                <img id="playImg" src="https://static.vecteezy.com/system/resources/previews/009/992/357/large_2x/pause-icon-sign-symbol-design-free-png.png" alt="">
+            </button>
+            <button onclick="playNext()">
+                <img src="https://cdn-icons-png.flaticon.com/512/181/181669.png" alt="">
+            </button>
+        </div>
+
+        <div class="playlist">
+            <ul id="playlist">
+                <li class="playlist-music" id="music1" onclick="playMusic('music1')"><a href="./music/song1.mp3" style="pointer-events: none" class="music-link">Orimi Master Blast</a></li>
+                <li class="playlist-music" id="music2" onclick="playMusic('music2')"><a href="./music/song2.mp3" style="pointer-events: none" class="music-link">Mad Love</a></li>
+                <li class="playlist-music" id="music3" onclick="playMusic('music3')"><a href="./music/song3.mp3" style="pointer-events: none" class="music-link">Tonight</a></li>
+            </ul>
+        </div>
+        <h4 id="trackTitle"></h4>
+    </div>
+
 
 </main>
+<div class="hero3">
+    <div class="hero_image3">
+    </div>
+    <div class="hero_textbox">
+        <h1 class="hero_header">Visuals
+    
+        </h1>
+        <p class="hero_text">MOBCITY is not just about music; we also offer a visually pleasing experience that resonates with our fans and captivates the larger audience. Our music videos and live performances are crafted to provide an immersive experience that complements our sound.</p>
+            </div>
+        
+    </div>
+    <div class="hero4"> 
+        <div class="hero_textbox2">
+           <h1 class="hero_header2">Join the MOBCITY Movement</h1> 
+           <p class="hero_text">Join us as we continue to keep the fire burning with our creative and diverse musical expressions. Follow us on our journey as we make our mark in the music industry and share our love for the craft with the world.</p>
+               </div>
+               <div class="hero_image4"></div>
+           </div>
+           <footer>
+            <ul class="socials"><li><a href="https://www.instagram.com/mobcityrodeo/" target="_blank"><img src="./icons/icons8-instagram-48.png" alt=""></a></li>
+                <li><a href=""><img src="./icons/icons8-twitter-48.png" alt="https://x.com/mobcityrodeoo"></a></li>
+                <li><a href=""><img src="./icons/icons8-youtube-48.png" alt="https://www.youtube.com/@mobcitytv"></a></li></ul>
+           </footer>
    
 
     The music duo mobcity hails from Nigeria and are a dynamic music group that loves making and even producing their own music from way back and guess what?
@@ -69,5 +128,6 @@ It's safe to say that mobcity are here for the taking .
 
 
     <script src="./script.js"></script>
+   
 </body>
 </html>
