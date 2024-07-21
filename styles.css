@@ -43,6 +43,10 @@ body{
 text-decoration: none;
 
 }
+.nav_link_active{
+  text-decoration: underline;
+  text-decoration-color: #551a8b;
+}
 
 .hamburger {
   display: none;
@@ -114,11 +118,62 @@ min-width: 300px;
 
 }
 
+.hero_image5{
+  background-image: url(./images/album.jpg);
+padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+background-position: center;
+width: 40%;
+margin-left: 3em;
+
+min-width: 300px;
+
+}
+
+.hero_image6{
+
+  background-image: url(./images/image5.jpg);
+  padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+
+min-width: 300px;
+
+}
+
+.hero_image7{
+  background-image: url(./images/image6.jpg);
+  padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+
+min-width: 300px;
+
+}
+
+.hero_image8{
+  background-image: url(./images/image7.jpg);
+  padding-bottom: 30rem;
+background-repeat:no-repeat ;
+background-size: contain;
+width: 40%;
+margin-left: 3em;
+
+min-width: 300px;
+
+}
+
 
 .hero, .hero2, .hero3, .hero4{
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 2em;
+    
 }
 
 .hero2{padding-top: 7em;}
@@ -309,11 +364,9 @@ align-content: center;
 
 
 
-.hero_image, .hero_image2, .hero_image3, .hero_image4{
+.hero_image, .hero_image2, .hero_image3, .hero_image4, .hero_image5, .hero_image6, .hero_image7, .hero_image8{
 width:100%;
 background-size: cover;
-
-
 background-position: center;
 margin:0;
 
