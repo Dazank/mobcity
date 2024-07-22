@@ -16,7 +16,7 @@ body{
  padding-right: 3em;
  position: sticky;
  padding-top: 2em;
-
+color:#551a8b;
  padding-bottom: 5em;
  
 }
@@ -30,6 +30,7 @@ body{
     font-size: x-large;
     align-items: center;
     padding-right: 3em;
+    color:#551a8b;
 }
 
 .logo{
@@ -339,7 +340,7 @@ align-content: center;
 .navbar{
   
   justify-content: space-around;
-  gap:4rem;
+  gap:2.5rem;
 
   
 }
@@ -442,12 +443,14 @@ color:purple;
   }
 
   .nav-item {
-      margin: 2.5rem 0;
+      margin: 4rem 0;
   }
 
   .hamburger {
       display: block;
       cursor: pointer;
+      padding-left: 2em;
+     
       
       
      
