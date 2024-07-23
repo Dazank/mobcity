@@ -423,7 +423,7 @@ color:purple;
 
 
   .nav_menu {
-
+     gap:1px;
     align-items: center;
       position: fixed;
       left: -100%;
